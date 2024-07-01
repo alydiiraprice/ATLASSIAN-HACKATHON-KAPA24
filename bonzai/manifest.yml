@@ -1,0 +1,19 @@
+modules:
+  macro:
+    - key: bonzai-hello-world-macro
+      resource: main
+      render: native
+      resolver:
+        function: resolver
+      title: bonzai
+      description: Volunteer to grow your bonzai!
+  function:
+    - key: resolver
+      handler: index.handler
+resources:
+  - key: main
+    path: src/frontend/index.jsx
+app:
+  runtime:
+    name: nodejs18.x
+  id: ari:cloud:ecosystem::app/8637ab9a-7f9a-4f53-be27-64a605094d7d
