@@ -10,6 +10,10 @@ modules:
   function:
     - key: resolver
       handler: index.handler
+permissions:
+  external:
+    images:
+      - 'https://i.imgur.com/3C5DECQ.png'
 resources:
   - key: main
     path: src/frontend/index.jsx

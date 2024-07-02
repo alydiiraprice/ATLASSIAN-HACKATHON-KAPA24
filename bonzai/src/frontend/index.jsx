@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import ForgeReconciler, { Text, Stack, Inline } from '@forge/react';
+import ForgeReconciler, { Text, Stack, Inline, Image } from '@forge/react';
 // import { invoke } from '@forge/bridge';
 import { Button } from "@forge/react";
 import { ProgressBar } from '@forge/react';
@@ -30,10 +30,11 @@ const App = () => {
   return (
     <>
       
-        
+      <Image src='https://i.imgur.com/3C5DECQ.png' alt="Seedling" size="small"/>
       
-      <ProgressBar ariaLabel={`Done: ${current} of ${total}`} value={progress} />
+      
       <Stack space="space.200" alignInline="center">
+      <ProgressBar ariaLabel={`Done: ${current} of ${total}`} value={progress} />
           <Text>Progress Tracker</Text>
           <Inline space="space.200">
               <Button onClick={() => addInteger(10)}>$25</Button>
