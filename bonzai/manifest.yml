@@ -16,6 +16,8 @@ permissions:
       - 'https://i.imgur.com/3C5DECQ.png'
       - 'https://i.imgur.com/6MzX4UG.png'
       - 'https://i.imgur.com/BwbjQTM.png'
+      - 'https://i.imgur.com/jupfb1V.png'
+      - 'https://i.imgur.com/zbJoeAY.png'
 resources:
   - key: main
     path: src/frontend/index.jsx

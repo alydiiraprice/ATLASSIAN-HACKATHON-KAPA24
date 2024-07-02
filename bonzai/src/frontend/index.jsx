@@ -1,17 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import ForgeReconciler, { Text, Stack, Inline, Image } from '@forge/react';
-// import { invoke } from '@forge/bridge';
 import { Button } from "@forge/react";
 import { ProgressBar } from '@forge/react';
 
 /**
  * TODO
  * - connect progress bar to 'goals' - and the text changes based on $ goal or hour goal
- * - insert dynamic tree
  * - connext to database to make the tree dynamic
  * - aesthetics
  * COMPLETE
  * - dynamic progress bar that updates with buttons
+ * - insert dynamic tree
  */
 
 const App = () => {
@@ -33,14 +32,14 @@ const App = () => {
     } 
     else if (newTotal >= 50 && newTotal < 100) { 
       // small tree
-      // setImageUrl(''); TO DO
-    } else if (newTotal < 50 && newTotal >= 25) { // sapling
+      setImageUrl('https://i.imgur.com/jupfb1V.png');
+    } else if (newTotal < 50 && newTotal >= 10) { // sapling
       setImageUrl('https://i.imgur.com/BwbjQTM.png');
     }
   }
 
   // state to hold the image url
-  const [imageUrl, setImageUrl] = useState('https://i.imgur.com/BwbjQTM.png'); // seed TO DO
+  const [imageUrl, setImageUrl] = useState('https://i.imgur.com/zbJoeAY.png'); // seed
 
   return (
     <>
