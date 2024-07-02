@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import ForgeReconciler, { Text, Stack, Inline, Image, Heading, Tooltip } from '@forge/react';
 import { Button } from "@forge/react";
 import { ProgressBar } from '@forge/react';
+import { UserGroup, User } from '@forge/react';
+
 
 /**
  * TODO
@@ -61,7 +63,11 @@ const App = () => {
               <Button onClick={() => addInteger(50)}>$50</Button>
           </Inline>
 
-        
+          <UserGroup>
+            <User accountId="712020:81e728ed-0d16-4b92-9d11-06a903ad1d0a"/>
+            <User accountId="712020:fd9499cf-34cb-42f4-b260-acc884ef7042"/>
+            <User accountId="637b30e79960988ef6bd510c"/>
+          </UserGroup>
 
       </Stack>
    
